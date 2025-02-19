@@ -6,9 +6,9 @@ import static com.gamerforea.packetunlimiter.CoreMod.VERSION;
 
 import com.google.common.eventbus.EventBus;
 
-import cpw.mods.fml.common.DummyModContainer;
-import cpw.mods.fml.common.LoadController;
-import cpw.mods.fml.common.ModMetadata;
+import net.minecraftforge.fml.common.DummyModContainer;
+import net.minecraftforge.fml.common.LoadController;
+import net.minecraftforge.fml.common.ModMetadata;
 
 public final class ModContainer extends DummyModContainer
 {

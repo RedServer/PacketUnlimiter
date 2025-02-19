@@ -3,10 +3,10 @@ package com.gamerforea.packetunlimiter;
 import java.io.File;
 import java.util.Map;
 
-import cpw.mods.fml.relauncher.IFMLLoadingPlugin;
 import net.minecraftforge.common.config.Configuration;
+import net.minecraftforge.fml.relauncher.IFMLLoadingPlugin;
 
-@IFMLLoadingPlugin.MCVersion("1.7.10")
+@IFMLLoadingPlugin.MCVersion("1.12.2")
 @IFMLLoadingPlugin.Name(CoreMod.NAME)
 @IFMLLoadingPlugin.SortingIndex(1001)
 public final class CoreMod implements IFMLLoadingPlugin
@@ -18,8 +18,6 @@ public final class CoreMod implements IFMLLoadingPlugin
 	public static boolean isObfuscated = false;
 	public static boolean bigPacketWarning = true;
 	public static boolean readNbtLimit = false;
-	public static boolean writeNbtLimit = false;
-	public static boolean unpackNbtLimit = false;
 
 	public CoreMod()
 	{
@@ -27,8 +25,6 @@ public final class CoreMod implements IFMLLoadingPlugin
 		config.load();
 		bigPacketWarning = config.getBoolean("bigPacketWarning", "general", bigPacketWarning, "Включить оповещение при превышении стандартного лимита (2 MB)");
 		readNbtLimit = config.getBoolean("readNbtLimit", "general", readNbtLimit, "Включить ограничение чтения NBT");
-		writeNbtLimit = config.getBoolean("writeNbtLimit", "general", writeNbtLimit, "Включить ограничение записи NBT");
-		unpackNbtLimit = config.getBoolean("unpackNbtLimit", "general", unpackNbtLimit, "Включить ограничение распаковки NBT");
 		config.save();
 	}
 
