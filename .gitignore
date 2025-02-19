@@ -1,0 +1,22 @@
+/.gradle/
+/.idea/
+/.vscode/
+/.settings/
+/build/
+/out/
+/run/
+/bin/
+/tmp/
+
+.project
+.loadpath
+.metadata
+.cache-main
+.worksheet
+
+# OS
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+.LSOverride

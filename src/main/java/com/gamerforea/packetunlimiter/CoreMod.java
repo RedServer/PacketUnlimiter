@@ -13,7 +13,7 @@ public final class CoreMod implements IFMLLoadingPlugin
 {
 	public static final String MODID = "PacketUnlimiter";
 	public static final String NAME = "PacketUnlimiter";
-	public static final String VERSION = "1.1";
+	public static final String VERSION = "@VERSION@";
 
 	public static boolean isObfuscated = false;
 	public static boolean bigPacketWarning = true;
